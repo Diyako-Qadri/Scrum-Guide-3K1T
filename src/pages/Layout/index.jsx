@@ -37,6 +37,7 @@ const Layout = () => {
                         <label className={styles.hamburgerMenu}>
                             <input checked={openBurger} onClick={handeClick} type="checkbox" />
                         </label>
+                    </div>
                         <aside className={`${styles.sidebar} ${openBurger ? styles.showBurger : ''}`}>
                             <nav>
                                 <NavLink onClick={closeBurger} className={styles.logoBurger} to='/'>Scrum Guide</NavLink>
@@ -128,7 +129,6 @@ const Layout = () => {
                                 </motion.div>
                             </nav>
                         </aside>
-                    </div>
                 </div>
             </nav>
             <section className={styles.mainContent}>
