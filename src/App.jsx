@@ -14,6 +14,8 @@ function App() {
                     <Route path='/team' element='' />
                     <Route path='/events' element='' />
                     <Route path='/artifacts' element='' />
+                    <Route path='/about' element='' />
+                    <Route path='/contact' element='' />
                 </Route>
             </Routes>
         </>
