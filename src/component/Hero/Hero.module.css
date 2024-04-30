@@ -1,0 +1,13 @@
+.hero {
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        background-size: contain;
+    }
+}
