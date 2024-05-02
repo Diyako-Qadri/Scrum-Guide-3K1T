@@ -1,9 +1,7 @@
-<<<<<<< HEAD
- import styles from './Layout.module.css'
-=======
+import styles from './Layout.module.css'
+
 import { useState } from 'react';
 import styles from './Layout.module.css'
->>>>>>> 515961b8ddf6570fe92de1459653d93abde9f1c2
 import { NavLink, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion'
 
