@@ -4,8 +4,18 @@ const Footer = () => {
   return (
     <>
     <div className={styles.footer__body}>
-      <div className={styles.left_content}>left</div>
-      <div className={styles.right_content}>rigth</div>
+      <div className={styles.left__content}>
+        <div className={styles.bigger__text}>SCRUM GUIDE</div>
+        <div className={styles.smaller__text}>Website about how to Scrum! </div>
+      </div>
+      <div className={styles.right__content}>
+        <div className={styles.footer__links}>
+          <a href="">Programs</a>
+          <a href="">Press</a>
+          <a href="">Contact</a>
+        </div>
+        <div className={styles.socialMedia__icons}>ICONS</div>
+      </div>
     </div>
     </>
   )
