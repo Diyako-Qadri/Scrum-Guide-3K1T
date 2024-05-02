@@ -2,8 +2,8 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './pages/Layout'
 import Home from './pages/Home'
-import Scrum from './pages/Scrum-page1'
 import Contact from './pages/Contact'
+import Scrum from './pages/Scrum-page1'
 function App() {
 
 
