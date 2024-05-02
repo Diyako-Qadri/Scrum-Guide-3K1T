@@ -9,9 +9,11 @@
 }
 
 .hamburger {
+    width: 40px;
     display: none;
     position: absolute;
     right: 24px;
+    overflow: visible;
 }
 
 .hamburgerMenu::before,
