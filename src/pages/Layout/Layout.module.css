@@ -9,7 +9,6 @@
 }
 
 .hamburger {
-    height: 0;
     width: 40px;
     display: none;
     position: absolute;
@@ -39,6 +38,7 @@
 }
 
 .hamburgerMenu input {
+    height: 0;
     appearance: none;
     margin: 10px;
     outline: none;

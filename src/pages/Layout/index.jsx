@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './Layout.module.css'
 import { NavLink, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion'
+
 const Layout = () => {
     const [openBurger, setOpenBurger] = useState(false);
     const toggleBurger = () => {
