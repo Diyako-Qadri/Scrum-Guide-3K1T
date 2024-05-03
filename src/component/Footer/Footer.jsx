@@ -10,8 +10,8 @@ const Footer = () => {
       </div>
       <div className={styles.right__content}>
         <div className={styles.footer__links}>
-          <a href="">Programs</a>
-          <a href="">Press</a>
+          <a href="">Articles</a>
+          <a href="">About</a>
           <a href="">Contact</a>
         </div>
         <div className={styles.socialMedia__icons}>ICONS</div>
