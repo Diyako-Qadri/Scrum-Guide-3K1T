@@ -11,10 +11,8 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-
   gap: 1rem;
   justify-content: space-between;
-
 }
 
 .left__content {
@@ -31,7 +29,8 @@
 }
 
 .bigger__text {
-  font-weight: 700;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .footer__links > a {
