@@ -37,6 +37,11 @@
   color: black;
 }
 
+.socialMedia__icons > svg {
+ width: 30px;
+ height: 30px;
+}
+
 @media only screen and (max-width: 600px) {
   .footer__body {
     flex-direction: column;

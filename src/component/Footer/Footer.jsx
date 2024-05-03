@@ -1,4 +1,9 @@
 import styles from "./Footer.module.css";
+import { NavLink } from 'react-router-dom';
+import { BsInstagram } from "react-icons/bs";
+import { FaSquareGithub } from "react-icons/fa6";
+import { CiLinkedin } from "react-icons/ci";
+
 
 const Footer = () => {
   return (
@@ -11,10 +16,14 @@ const Footer = () => {
       <div className={styles.right__content}>
         <div className={styles.footer__links}>
           <a href="">Articles</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
+          <NavLink className={`${styles.navItem} ${styles.about}`} to='/about'>About</NavLink>
+          <NavLink className={`${styles.navItem} ${styles.contact}`} to='/contact'>Contact</NavLink>
         </div>
-        <div className={styles.socialMedia__icons}>ICONS</div>
+        <div className={styles.socialMedia__icons}>
+          <BsInstagram /> 
+          <FaSquareGithub /> 
+          <CiLinkedin />
+        </div>
       </div>
     </div>
     </>
