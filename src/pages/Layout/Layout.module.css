@@ -38,6 +38,7 @@
 }
 
 .hamburgerMenu input {
+    height: 0;
     appearance: none;
     margin: 10px;
     outline: none;
