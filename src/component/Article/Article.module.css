@@ -1,0 +1,24 @@
+.article__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+.headline {
+  font-size: xx-large;
+}
+
+.article__text {
+  font-size: x-large;
+}
+
+.article__details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-size: x-large;
+}
