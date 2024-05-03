@@ -5,19 +5,15 @@ import { motion } from 'framer-motion'
 
 const Layout = () => {
     const [openBurger, setOpenBurger] = useState(false);
-
     const toggleBurger = () => {
         setOpenBurger()
     }
-
     const handeClick = () => {
         setOpenBurger(!openBurger)
     }
-
     const closeBurger = () => {
         setTimeout(toggleBurger, 500);
     }
-
     return (
         <>
             <nav className={styles.nav}>
@@ -38,97 +34,107 @@ const Layout = () => {
                             <input checked={openBurger} onClick={handeClick} type="checkbox" />
                         </label>
                     </div>
-                        <aside className={`${styles.sidebar} ${openBurger ? styles.showBurger : ''}`}>
-                            <nav>
-                                <NavLink onClick={closeBurger} className={styles.logoBurger} to='/'>Scrum Guide</NavLink>
-                                <motion.div className={styles.burgerNav}
+                    <aside className={`${styles.sidebar} ${openBurger ? styles.showBurger : ''}`}>
+                        <nav>
+                            <NavLink onClick={closeBurger} className={styles.logoBurger} to='/'>Scrum Guide</NavLink>
+                            <motion.div className={styles.burgerNav}
+                                initial={{
+                                    opacity: 0,
+                                    y: 150
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 0.6
+                                    }
+                                }}
+                                viewport={{ once: false }}>
+
+                                <motion.div className={styles.navItemBurger}
                                     initial={{
                                         opacity: 0,
-                                        // if odd index card,slide from right instead of left
-                                        y: 150
+                                        x: -80
                                     }}
                                     whileInView={{
                                         opacity: 1,
-                                        y: 0, // Slide in to its original position
+                                        x: 0,
                                         transition: {
-                                            duration: 0.6 // Animation duration
+                                            duration: 0.6
                                         }
                                     }}
                                     viewport={{ once: false }}>
-                                    <motion.NavLink onClick={closeBurger} className={styles.navItemBurger} to='/scrum'
-                                        initial={{
-                                            opacity: 0,
-                                            // if odd index card,slide from right instead of left
-                                            x: -80
-                                        }}
-                                        whileInView={{
-                                            opacity: 1,
-                                            x: 0, // Slide in to its original position
-                                            transition: {
-                                                duration: 0.6 // Animation duration
-                                            }
-                                        }}
-                                        viewport={{ once: false }}>Scrum</motion.NavLink>
-                                    <motion.NavLink onClick={closeBurger} className={styles.navItemBurger} to='/team'
-                                        initial={{
-                                            opacity: 0,
-                                            // if odd index card,slide from right instead of left
-                                            x: 80
-                                        }}
-                                        whileInView={{
-                                            opacity: 1,
-                                            x: 0, // Slide in to its original position
-                                            transition: {
-                                                duration: 0.6 // Animation duration
-                                            }
-                                        }}
-                                        viewport={{ once: false }}>The Scrum Team</motion.NavLink>
-                                    <motion.NavLink onClick={closeBurger} className={styles.navItemBurger} to='/events'
-                                        initial={{
-                                            opacity: 0,
-                                            // if odd index card,slide from right instead of left
-                                            x: -80
-                                        }}
-                                        whileInView={{
-                                            opacity: 1,
-                                            x: 0, // Slide in to its original position
-                                            transition: {
-                                                duration: 0.6 // Animation duration
-                                            }
-                                        }}
-                                        viewport={{ once: false }}>Scrum Events</motion.NavLink>
-                                    <motion.NavLink onClick={closeBurger} className={styles.navItemBurger} to='/artifacts'
-                                        initial={{
-                                            opacity: 0,
-                                            // if odd index card,slide from right instead of left
-                                            x: 80
-                                        }}
-                                        whileInView={{
-                                            opacity: 1,
-                                            x: 0, // Slide in to its original position
-                                            transition: {
-                                                duration: 0.6 // Animation duration
-                                            }
-                                        }}
-                                        viewport={{ once: false }}>Scrum Artifacts</motion.NavLink>
-                                    <motion.NavLink onClick={closeBurger} className={`${styles.navItemBurger}`} to='/about'
-                                        initial={{
-                                            opacity: 0,
-                                            // if odd index card,slide from right instead of left
-                                            x: -80
-                                        }}
-                                        whileInView={{
-                                            opacity: 1,
-                                            x: 0, // Slide in to its original position
-                                            transition: {
-                                                duration: 0.6 // Animation duration
-                                            }
-                                        }}
-                                        viewport={{ once: false }}>About</motion.NavLink>
-                                    <NavLink onClick={closeBurger} className={`${styles.navItemBurger} ${styles.contactBurger}`} to='/contact'>Contact</NavLink>
+                                    <NavLink onClick={closeBurger} to='/scrum'>Scrum</NavLink>
                                 </motion.div>
-                            </nav>
-                        </aside>
+
+                                <motion.div className={styles.navItemBurger}
+                                    initial={{
+                                        opacity: 0,
+                                        x: 80
+                                    }}
+                                    whileInView={{
+                                        opacity: 1,
+                                        x: 0,
+                                        transition: {
+                                            duration: 0.6
+                                        }
+                                    }}
+                                    viewport={{ once: false }}>
+                                    <NavLink onClick={closeBurger} to='/team'>The Scrum Team</NavLink>
+                                </motion.div>
+
+                                <motion.div className={styles.navItemBurger}
+                                    initial={{
+                                        opacity: 0,
+                                        x: -80
+                                    }}
+                                    whileInView={{
+                                        opacity: 1,
+                                        x: 0,
+                                        transition: {
+                                            duration: 0.6
+                                        }
+                                    }}
+                                    viewport={{ once: false }}>
+                                    <NavLink onClick={closeBurger} to='/events'>Scrum Events</NavLink>
+                                </motion.div>
+
+                                <motion.div className={styles.navItemBurger}
+                                    initial={{
+                                        opacity: 0,
+                                        x: 80
+                                    }}
+                                    whileInView={{
+                                        opacity: 1,
+                                        x: 0,
+                                        transition: {
+                                            duration: 0.6
+                                        }
+                                    }}
+                                    viewport={{ once: false }}>
+                                    <NavLink onClick={closeBurger} to='/artifacts'>Scrum Artifacts</NavLink>
+                                </motion.div>
+
+                                <motion.div className={styles.navItemBurger}
+                                    initial={{
+                                        opacity: 0,
+                                        x: -80
+                                    }}
+                                    whileInView={{
+                                        opacity: 1,
+                                        x: 0,
+                                        transition: {
+                                            duration: 0.6
+                                        }
+                                    }}
+                                    viewport={{ once: false }}>
+                                    <NavLink onClick={closeBurger} to='/about'>About</NavLink>
+                                </motion.div>
+
+                                <NavLink onClick={closeBurger} className={`${styles.navItemBurger} ${styles.contactBurger}`} to='/contact'>Contact</NavLink>
+                            </motion.div>
+                        </nav>
+                    </aside>
                 </div>
             </nav>
             <section className={styles.mainContent}>
@@ -137,5 +143,4 @@ const Layout = () => {
         </>
     )
 };
-
 export default Layout
