@@ -4,6 +4,7 @@ import Layout from './pages/Layout'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Scrum from './pages/Scrum-page1'
+import About from './pages/About'
 function App() {
 
 
@@ -16,7 +17,7 @@ function App() {
                     <Route path='/team' element='' />
                     <Route path='/events' element='' />
                     <Route path='/artifacts' element='' />
-                    <Route path='/about' element='' />
+                    <Route path='/about' element={<About/>} />
                     <Route path='/contact' element={<Contact/>} />
                 </Route>
             </Routes>
