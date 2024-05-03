@@ -1,19 +1,28 @@
-.article__body {
+.article__container {
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: 2rem;
   gap: 1rem;
-  border: 1px solid black;
-  margin: 1rem;
 }
 
-.headline {
+.article__headline {
   font-size: xx-large;
 }
 
+.article__body {
+  display: flex;
+  gap: 1rem;
+}
+
 .article__text {
-  font-size: x-large;
+  font-size: large;
+}
+
+.article__image__wrapper > div {
+  width: 300px;
+  height: 100%;
+  background-color: cadetblue;
 }
 
 .article__details {
