@@ -1,9 +1,5 @@
-<<<<<<<<< Temporary merge branch 1
-import styles from './Layout.module.css'
-
-=========
->>>>>>>>> Temporary merge branch 2
 import { useState } from 'react';
+import styles from './Layout.module.css'
 import { NavLink, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion'
 
