@@ -20,9 +20,9 @@ const Footer = () => {
           <NavLink className={`${styles.navItem} ${styles.contact}`} to='/contact'>Contact</NavLink>
         </div>
         <div className={styles.socialMedia__icons}>
-          <BsInstagram /> 
-          <FaSquareGithub /> 
-          <CiLinkedin />
+          <a href="https://www.instagram.com/" target="blank"><BsInstagram /> </a>
+          <a href="https://www.github.com/" target="blank"><FaSquareGithub /> </a>
+          <a href="https://www.linkedin.com/" target="blank"><CiLinkedin /> </a>
         </div>
       </div>
     </div>

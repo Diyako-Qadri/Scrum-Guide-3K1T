@@ -37,9 +37,16 @@
   color: black;
 }
 
-.socialMedia__icons > svg {
- width: 30px;
- height: 30px;
+.socialMedia__icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialMedia__icons > a {
+  text-decoration: none;
+  color: black;
+  width: 30px;
+  height: 30px;
 }
 
 @media only screen and (max-width: 600px) {
