@@ -1,0 +1,6 @@
+.scrumTeam {
+    background-color: rgb(226, 243, 234);
+   display: flex;
+   flex-direction: column;
+}
+
