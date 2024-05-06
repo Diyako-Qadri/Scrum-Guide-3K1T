@@ -7,7 +7,7 @@ const Home = () => {
         <section className={styles.HomePage}>
             <div>
                 <Hero/>
-                <Article/>
+                <Article size={"small"}/>
             </div>
         </section>
     )
