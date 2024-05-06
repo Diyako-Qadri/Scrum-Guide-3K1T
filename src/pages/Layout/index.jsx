@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './Layout.module.css'
 import { NavLink, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion'
+import Footer from '../../component/Footer/Footer';
 
 const Layout = () => {
     const [openBurger, setOpenBurger] = useState(false);
@@ -140,6 +141,7 @@ const Layout = () => {
             <section className={styles.mainContent}>
                 <Outlet />
             </section>
+            <Footer />
         </>
     )
 };

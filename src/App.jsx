@@ -6,8 +6,6 @@ import Contact from './pages/Contact'
 import Scrum from './pages/Scrum-page'
 import About from './pages/About'
 function App() {
-
-
     return (
         <>
             <Routes>

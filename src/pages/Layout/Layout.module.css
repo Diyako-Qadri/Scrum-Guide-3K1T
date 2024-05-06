@@ -176,6 +176,10 @@
     margin: 0 8px;
 }
 
+.mainContent {
+    flex-grow: 1;
+}
+
 @media screen and (max-width: 1024px) {
     .navItem
      {
