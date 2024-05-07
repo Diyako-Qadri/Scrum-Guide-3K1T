@@ -3,13 +3,9 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from './pages/Layout'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
-<<<<<<< HEAD
-import Scrum from './pages/Scrum-page1'
-import TheScrumTeam from './pages/TheScrumTeam'
-=======
+import TheScrumTeam from './component/ScrumTeam'
 import Scrum from './pages/Scrum-page'
 import About from './pages/About'
->>>>>>> 819bd21f09308a9b8a049137d7e7e462d44fdf3f
 function App() {
 
 
