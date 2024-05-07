@@ -11,7 +11,8 @@
 .hamburger {
     width: 40px;
     display: none;
-    position: absolute;
+    position: fixed;
+    z-index: 12;
     right: 24px;
     overflow: visible;
 }

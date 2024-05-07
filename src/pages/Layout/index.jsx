@@ -30,6 +30,7 @@ const Layout = () => {
                         <NavLink className={`${styles.navItem} ${styles.about}`} to='/about'>About</NavLink>
                         <NavLink className={`${styles.navItem} ${styles.contact}`} to='/contact'>Contact</NavLink>
                     </div>
+                    
                     <div className={styles.hamburger}>
                         <label className={styles.hamburgerMenu}>
                             <input checked={openBurger} onClick={handeClick} type="checkbox" />
