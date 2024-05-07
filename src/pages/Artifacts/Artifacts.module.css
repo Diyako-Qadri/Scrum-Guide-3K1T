@@ -1,0 +1,51 @@
+.artifactsBg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../../assets/hero_artifacts.jpg');
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headlineContainer {
+    width: 70%;
+    text-align: center;
+}
+
+.artifactsBg h1 {
+    font-size: 5.5rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.underline {
+    font-size: 5.5rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
+.underline::after {
+    content: '';
+    border-bottom: 6px hsla(40.52980132, 91.51515152%, 67.64705882%, 1) solid;
+    border-radius: 100%;
+    width: 110%;
+    position: absolute;
+    bottom: 4px;
+    left: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .headlineContainer {
+        width: 90%;
+    }
+
+    .artifactsBg h1,
+    .underline {
+        font-size: 4rem;
+    }
+
+}

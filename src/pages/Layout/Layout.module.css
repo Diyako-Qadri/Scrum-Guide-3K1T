@@ -4,7 +4,7 @@
     --hamburger-gap: 6px;
     --foreground: #333;
     --background: white;
-    --animation-timing: 200ms ease-in-out;
+    --animation-timing: 400ms ease-in-out;
     --hamburger-height: 23px;
 }
 
@@ -63,7 +63,8 @@
 }
 
 .sidebar {
-    background-color: rgb(249, 247, 225);
+    background-color: rgb(249, 247, 225, 0.7);
+    backdrop-filter: blur(8px);
     min-height: 100vh;
     width: 100%;
     position: absolute;
@@ -166,8 +167,8 @@
 .contactBurger {
     text-decoration: none;
     margin-top: 20%;
-    background-color: black;
-    color: white;
+    background-color: hsla(40.52980132, 91.51515152%, 67.64705882%, 1);
+    color: rgb(0, 0, 0);
     padding: 20px 40px;
     font-size: 1.2rem;
 }
