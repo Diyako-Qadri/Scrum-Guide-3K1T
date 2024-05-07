@@ -33,10 +33,16 @@ const ScrumTeam = () => {
             onClick={() => handleMemberClick(i)}
           >
             <motion.h2 className={styles.dropdownHead}>
-              {item.name} 
-              <IoIosArrowForward style={{ transform: selectedMember === i ? 'rotate(90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }} />
+              {item.name}
+              <IoIosArrowForward
+                style={{
+                  transform:
+                    selectedMember === i ? 'rotate(90deg)' : 'rotate(0deg)',
+                  transition: 'transform 0.3s ease',
+                }}
+              />
             </motion.h2>
-         
+
             {selectedMember === i && (
               <motion.div
                 className={styles.ScrumMemberTextContainer}
@@ -44,13 +50,14 @@ const ScrumTeam = () => {
                 animate={{ height: 'auto' }}
                 exit={{ height: 0 }}
                 transition={{ duration: 0.6 }}
-              >   <img
-              className={styles.ScrumRolesImage}
-              src={getImageURLScrum(item.image)}
-              alt=""
-            />
+              >
+                {' '}
+                <img
+                  className={styles.ScrumRolesImage}
+                  src={getImageURLScrum(item.image)}
+                  alt=""
+                />
                 <div className={styles.ScrumMemberText}>
-             
                   <p>{item.description}</p>
                 </div>
               </motion.div>

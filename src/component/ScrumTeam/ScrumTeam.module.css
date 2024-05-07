@@ -4,13 +4,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  height: 75vh;
-  width: 100%;
-}
-
-.ScrumTeamIntro {
   text-align: center;
   justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+  width: 100%;
 }
 
 .ScrumTeamText {
@@ -25,12 +23,12 @@
   font-weight: 100;
   padding: 10px;
   letter-spacing: 2px;
+  text-transform: uppercase;
   width: 80%;
 }
 
 .TeamMemberContainer {
   align-items: center;
-  /* background-color: hsla(40.52980132, 91.51515152%, 67.64705882%, 1); */
   background-image: url('./../../assets/SCrumTeamBackground.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -38,10 +36,9 @@
   display: flex;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    justify-content: start;
+  justify-content: start;
   flex-direction: column;
 
-  height: 100%;
   width: 100%;
 }
 .ScrumRolesImage {
@@ -61,12 +58,11 @@
   text-align: center;
   height: 10%;
 }
-.ScrumMemberTextContainer{
-    display: flex;
-    flex-direction: row;
+.ScrumMemberTextContainer {
+  display: flex;
+  flex-direction: row;
 }
 .ScrumMember {
-  /* background-color: rgba(255, 255, 255, 0.292); */
   border-radius: 10px;
   filter: drop-shadow(0 0 0.75rem rgba(177, 175, 175, 0.551));
   margin: 20px;
@@ -76,7 +72,7 @@
 }
 .ScrumMemberText {
   background-color: rgba(252, 200, 88, 0.798);
-  border-radius: 0 0 10px 0;
+  border-radius: 0 0 10px 10px;
   text-align: start;
   letter-spacing: 1.5px;
   font-size: 1.1rem;
@@ -85,11 +81,9 @@
   padding: 10px;
 }
 @media screen and (max-width: 1024px) {
-    .ScrumMemberTextContainer{
-    
-        flex-direction: column;
-    }
-
+  .ScrumMemberTextContainer {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 912px) {
@@ -107,5 +101,11 @@
   }
   .TeamMemberContainer {
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .ScrumTeamText {
+    font-size: 1.1rem;
   }
 }
