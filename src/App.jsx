@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Scrum from './pages/Scrum-page1'
 import About from './pages/About'
+import TheScrumTeam from './pages/TheScrumTeam'
 function App() {
 
 
@@ -14,7 +15,7 @@ function App() {
                 <Route element={<Layout />}>
                     <Route path='/' element={<Home/>} />
                     <Route path='/scrum' element={<Scrum/>} />
-                    <Route path='/team' element='' />
+                    <Route path='/team' element={<TheScrumTeam/>} />
                     <Route path='/events' element='' />
                     <Route path='/artifacts' element='' />
                     <Route path='/about' element={<About/>} />
