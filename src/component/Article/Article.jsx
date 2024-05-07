@@ -1,24 +1,40 @@
 import styles from "./Article.module.css";
-import backgroundImage from '../../assets/hero3dark.jpg';
 
-const Article = ({ size, data }) => {
-  if (size === "small") {
+
+const Article = ({ size, data, setFocus, focusedArticle, articleNumber }) => {
+  let articleContent = JSON.parse(data)
+  console.log(articleContent.headline + " " + articleNumber)
+
+  const handleClick = () => {
+    focusedArticle  === articleNumber ? setFocus(null) : setFocus(articleNumber);
+  }
+
+  const handleTextSize = () => {
+    if(focusedArticle === articleNumber){
+      return (
+        articleContent.text
+      )
+    } else {
+      let fullDescription = articleContent.text
+      return(
+        fullDescription.slice(0, 200) + "..."
+      )
+    }
+  }
+
+  if (size !== "large") {
     return (
     <>
     <div className={styles.article__container}>
-      <h2 className={styles.article__headline}>Headline</h2>
+      <h2 className={styles.article__headline}>{articleContent.headline}</h2>
       <div className={styles.article__body}>
         <p className={styles.article__text}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid sapiente repudiandae accusamus dolorum aspernatur exercitationem libero, debitis ipsum voluptatibus doloribus, autem neque sint iusto blanditiis odit velit! Porro, quo.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos doloremque voluptatibus vel molestias odit. Tempore doloribus assumenda officia natus, dolorum facere atque! Neque aut placeat adipisci quos, tempora provident ut!
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos doloremque voluptatibus vel molestias odit. Tempore doloribus assumenda officia natus, dolorum facere atque! Neque aut placeat adipisci quos, tempora provident ut!
+          {handleTextSize()}
         </p>
-        <div className={styles.article__image__wrapper}>
-          <div style={{ backgroundImage: `url(${backgroundImage})` }}></div>
-        </div>
+        <div className={`${styles.expand__button} ${focusedArticle === articleNumber ? styles.active__button : "" }`} onClick={handleClick} >{focusedArticle === articleNumber ? "Read less" : "Read more"}</div>
       </div>
       <div className={styles.article__details}>
-        <p>jane smith</p>
+        <p>{articleContent.author}</p>
         <p>february 21 2011</p>
       </div>
     </div>
@@ -28,23 +44,14 @@ const Article = ({ size, data }) => {
     return (
       <>
       <div className={styles.article__container}>
-      <h2 className={styles.article__headline}>Headline</h2>
+      <h2 className={styles.article__headline}>{articleContent.headline}</h2>
       <div className={styles.article__body}>
         <p className={styles.article__text}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid sapiente repudiandae accusamus dolorum aspernatur exercitationem libero, debitis ipsum voluptatibus doloribus, autem neque sint iusto blanditiis odit velit! Porro, quo.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos doloremque voluptatibus vel molestias odit. Tempore doloribus assumenda officia natus, dolorum facere atque! Neque aut placeat adipisci quos, tempora provident ut!
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid sapiente repudiandae accusamus dolorum aspernatur exercitationem libero, debitis ipsum voluptatibus doloribus, autem neque sint iusto blanditiis odit velit! Porro, quo.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos doloremque voluptatibus vel molestias odit. Tempore doloribus assumenda officia natus, dolorum facere atque! Neque aut placeat adipisci quos, tempora provident ut!
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos doloremque voluptatibus vel molestias odit. Tempore doloribus assumenda officia natus, dolorum facere atque! Neque aut placeat adipisci quos, tempora provident ut!
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos doloremque voluptatibus vel molestias odit. Tempore doloribus assumenda officia natus, dolorum facere atque! Neque aut placeat adipisci quos, tempora provident ut!
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos doloremque voluptatibus vel molestias odit. Tempore doloribus assumenda officia natus, dolorum facere atque! Neque aut placeat adipisci quos, tempora provident ut!
+          {articleContent.text}
         </p>
-        <div className={styles.article__image__wrapper}>
-          <div></div>
-        </div>
       </div>
       <div className={styles.article__details}>
-        <p>jane smith</p>
+        <p>{articleContent.author}</p>
         <p>february 21 2011</p>
       </div>
     </div>
