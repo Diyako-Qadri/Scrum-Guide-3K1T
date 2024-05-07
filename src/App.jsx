@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from './pages/Layout'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
-import TheScrumTeam from './pages/TheScrumTeam'
+import TheScrumTeam from './component/ScrumTeam'
 import Scrum from './pages/Scrum-page'
 import About from './pages/About'
 function App() {
@@ -21,7 +21,7 @@ function App() {
                     <Route path='/about' element={<About/>} />
                     <Route path='/contact' element={<Contact/>} />
                 </Route>
-            </Routes>
+            </Routes> 
         </>
     )
 }
