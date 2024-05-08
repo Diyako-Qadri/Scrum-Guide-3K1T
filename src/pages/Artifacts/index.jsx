@@ -35,7 +35,7 @@ const Artifacts = () => {
                             initial={{
                                 opacity: 0,
                                 transition: {
-                                    delay: 2 
+                                    delay: 2
                                 }
                             }}
                             whileInView={{
@@ -54,18 +54,82 @@ const Artifacts = () => {
             <div className={styles.artifactsInfoBG}>
                 <div className={styles.artifactsInfo}>
                     <div className={styles.artifactsText}>
-                        <h2>Scrum Artifacts</h2>
-                        <p className={styles.textp1}>Scrum's artifacts embody work or value and aim to enhance transparency of crucial information. This transparency ensures that all stakeholders have a common foundation for adaptation. Each artifact includes a commitment to deliver information that fosters transparency and focus, serving as a benchmark for measuring progress:</p>
-                        <ul>
+                        <motion.h2
+                            initial={{
+                                y: 50,
+                                opacity: 0,
+                                transition: {
+                                    delay: 2
+                                }
+                            }}
+                            whileInView={{
+                                y: 0,
+                                opacity: 1,
+                                transition: {
+                                    duration: 1
+                                }
+                            }}
+                            viewport={{ once: false }}
+                        >Scrum Artifacts</motion.h2>
+                        <motion.p className={styles.textp1}
+                            initial={{
+                                x: 100,
+                                opacity: 0,
+                                transition: {
+                                    delay: 2
+                                }
+                            }}
+                            whileInView={{
+                                x: 0,
+                                opacity: 1,
+                                transition: {
+                                    duration: 0.7
+                                }
+                            }}
+                            viewport={{ once: false }}
+                        >Scrum's artifacts embody work or value and aim to enhance transparency of crucial information. This transparency ensures that all stakeholders have a common foundation for adaptation. Each artifact includes a commitment to deliver information that fosters transparency and focus, serving as a benchmark for measuring progress:</motion.p>
+                        <motion.ul
+                            initial={{
+                                x: -100,
+                                opacity: 0,
+                                transition: {
+                                    delay: 2
+                                }
+                            }}
+                            whileInView={{
+                                x: 0,
+                                opacity: 1,
+                                transition: {
+                                    duration: 1.4
+                                }
+                            }}
+                            viewport={{ once: false }}
+                        >
                             <li>The Product Backlog commits to the Product Goal.</li>
                             <li>The Sprint Backlog commits to the Sprint Goal.</li>
                             <li>The Increment commits to the Definition of Done.</li>
-                        </ul>
-                        <div className={styles.btnContainer}>
+                        </motion.ul>
+                        <motion.div className={styles.btnContainer}
+                            initial={{
+                                y: 50,
+                                opacity: 0,
+                                transition: {
+                                    delay: 2
+                                }
+                            }}
+                            whileInView={{
+                                y: 0,
+                                opacity: 1,
+                                transition: {
+                                    duration: 1.6
+                                }
+                            }}
+                            viewport={{ once: false }}
+                        >
                             <button onClick={() => handleClick('backlog')} className={styles.artifactsBtn}>Backlog</button>
                             <button onClick={() => handleClick('increment')} className={styles.artifactsBtn}>Increment</button>
                             <button onClick={() => handleClick('dod')} className={styles.artifactsBtn}>DoD</button>
-                        </div>
+                        </motion.div>
                     </div>
                     <img src={postits} className={styles.artifactsImg} />
                 </div>
