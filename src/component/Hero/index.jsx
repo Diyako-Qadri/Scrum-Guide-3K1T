@@ -18,7 +18,7 @@ const Hero = () => {
                             duration: 2
                         }
                     }}
-                    viewport={{ once: false }}>
+                    viewport={{ once: true }}>
                     The <motion.span
                         initial={{
                             opacity: 0,
@@ -32,7 +32,7 @@ const Hero = () => {
                                 duration: 2
                             }
                         }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         className={styles.underline}>
                         Ultimate
                     </motion.span> Scrum Guide
