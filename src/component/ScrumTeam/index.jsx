@@ -14,12 +14,47 @@ const ScrumTeam = () => {
 
   return (
     <>
-      <div className={styles.ScrumTeamIntro}>
-      
+      <div className={styles.ScrumTeamHero}>
+        <div className={styles.teamHeadlineContainer}>
+          <motion.h1
+            initial={{
+              opacity: 0,
+              y: 150,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 2,
+              },
+            }}
+            viewport={{ once: false }}
+          >
+            Scrum
+            <motion.span
+              initial={{
+                opacity: 0,
+                transition: {
+                  delay: 2, // Delay of 2 seconds
+                },
+              }}
+              whileInView={{
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                },
+              }}
+              viewport={{ once: false }}
+              className={styles.underline}
+            >
+              Team
+            </motion.span>
+          </motion.h1>
+        </div>
       </div>
 
       <div className={styles.TeamMemberContainer}>
-      <p className={styles.ScrumTeamText}>
+        <p className={styles.ScrumTeamText}>
           A Scrum team comprises roles like Scrum Master, Product Owner, and
           developers collaborating to deliver products using the Scrum
           methodology. They organize work into short iterations called sprints,
