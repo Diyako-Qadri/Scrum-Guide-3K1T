@@ -1,5 +1,4 @@
 import styles from './Home.module.css'
-import Footer from '../../component/Footer/Footer';
 import Hero from '../../component/Hero';
 
 const Home = () => {
@@ -8,7 +7,6 @@ const Home = () => {
             <div>
                 <Hero/>
             </div>
-            <Footer/>
         </section>
     )
 };

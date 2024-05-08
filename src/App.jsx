@@ -6,9 +6,8 @@ import Contact from './pages/Contact'
 import TheScrumTeam from './component/ScrumTeam'
 import Scrum from './pages/Scrum-page'
 import About from './pages/About'
+import Artifacts from './pages/Artifacts'
 function App() {
-
-
     return (
         <>
             <Routes>
@@ -17,7 +16,7 @@ function App() {
                     <Route path='/scrum' element={<Scrum/>} />
                     <Route path='/team' element={<TheScrumTeam/>} />
                     <Route path='/events' element='' />
-                    <Route path='/artifacts' element='' />
+                    <Route path='/artifacts' element={<Artifacts />} />
                     <Route path='/about' element={<About/>} />
                     <Route path='/contact' element={<Contact/>} />
                 </Route>
