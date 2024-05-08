@@ -5,8 +5,8 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Scrum from './pages/Scrum-page'
 import About from './pages/About'
-import TheScrumTeam from './pages/TheScrumTeam'
 import Artifacts from './pages/Artifacts'
+import TheScrumTeam from './pages/TheScrumTeam'
 function App() {
     return (
         <>
