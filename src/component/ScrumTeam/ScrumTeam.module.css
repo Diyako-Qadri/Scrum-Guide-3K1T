@@ -1,5 +1,5 @@
-.ScrumTeamIntro {
-    background-image: url('../../assets/scrumTeam2.jpg');
+.ScrumTeamHero {
+    background-image: linear-gradient(#00000075, #0000004d), url('../../assets/scrumTeam2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   
   .ScrumTeamText {
     align-self: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border-radius: 10px;
     border: 1px solid #fff;
     color: rgb(252, 252, 252);
@@ -24,12 +24,47 @@
     padding: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    width: 80%;
+    margin-bottom: 30px;
+    width: 90%;
   }
+
+  .teamHeadlineContainer {
+    color: #fff;
+      font-size: 5.5rem;
+      font-weight: 300;
+      text-align: center;
+      width: 100%;
+}
+
+.ScrumTeamHero h1 {
+    font-size: 5.5rem;
+    color: white;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.underline {
+    font-size: 5.5rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
+.underline::after {
+    content: '';
+    border-bottom: 6px hsla(40.52980132, 91.51515152%, 67.64705882%, 1) solid;
+    border-radius: 100%;
+    width: 110%;
+    position: absolute;
+    bottom: 4px;
+    left: -10px;
+}
   
   .TeamMemberContainer {
     align-items: center;
-    background-image: url('./../../assets/SCrumTeamBackground.jpg');
+    background-image: linear-gradient(#00000075, #00000064),  url('./../../assets/SCrumTeamBackground.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +80,7 @@
     background-color: rgba(255, 255, 255, 0.771);
     border-radius: 0 0 0 10px;
     height: 300px;
-    width: 100%;
+    max-width: 400px;
   }
   .dropdownHead {
     align-items: center;
@@ -74,7 +109,6 @@
   }
   .ScrumMemberText {
     background-color: rgba(252, 200, 88, 0.798);
-    border-radius: 0 0 10px 10px;
     text-align: start;
     letter-spacing: 1.5px;
     font-size: 1.1rem;
@@ -86,7 +120,11 @@
     .ScrumMemberTextContainer {
       flex-direction: column;
     }
+    .ScrumRolesImage{
+        min-width:  100%;
+    }
   }
+
   
   @media screen and (max-width: 912px) {
     .TeamMemberContainer {
@@ -102,13 +140,31 @@
       font-size: 1.4rem;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .ScrumTeamHero {
+        height: 60vh;
+    }
+
+    .headlineContainer {
+        width: 90%;
+    }
+
+    .ScrumTeamHero h1,
+    .underline {
+        font-size: 4rem;
+    }
+
+}
   
   @media screen and (max-width: 429px) {
     .TeamMemberContainer {
-      height: 500px;
       flex-direction: column;
+
     }
     .ScrumTeamText {
+       
+        margin-top: 20px;
       font-size: 1rem;
     }
   }
