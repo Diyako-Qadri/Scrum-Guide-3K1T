@@ -2,9 +2,8 @@ import styles from "./Article.module.css";
 
 
 const Article = ({ size, data, setFocus, focusedArticle, articleNumber }) => {
-  let articleContent = JSON.parse(data)
-  console.log(articleContent.headline + " " + articleNumber)
-
+  let articleContent = JSON.parse(data);
+  
   const handleClick = () => {
     focusedArticle  === articleNumber ? setFocus(null) : setFocus(articleNumber);
   }
