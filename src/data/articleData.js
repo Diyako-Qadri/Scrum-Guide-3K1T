@@ -4,8 +4,8 @@ const sprintReview = '{"headline": "Sprint Review", "author":"Tim Deckel", "text
 const sprintRetrospective = '{"headline": "Sprint Retrospective", "author":"Tim Deckel", "text": "The Purpose of the last event of the Sprint is to take a moment and look back at the lessons learned and challenges faced. It’s an inquisitive look into the past sprint and during the meeting the team members bring up things that went well such as good communication within the team, a well planned structure or maybe some issues with the tasks that weren’t foreseen. Each part and task is picked apart with an objective view and discussed to find things that went good, things that went not so good and possible improvements to the teams process is hopefully identified. In essence during this meeting every major task, challenge and lesson and even the lack of, is discussed within the team in an effort to extract as much valuable information with the purpose of preventing the issues that was preventable and improving already existing processes to make sure that each and every member of the development team can function as well as they possibly can for the purpose of creating more value and eliminating hardships in the future. Then as improvements and changes are identified the backlog is changed and adapted to reflect the possible changes in priority. with this meeting the sprint is concluded and for a standard one month sprint, the retrospective is generally around three hours long and after that the cycle repeats itself until the project is done."}';
 
 
-const articleList = [sprintPlanning, dailyScrum, sprintReview, sprintRetrospective]
-console.log(articleList)
+const articleList = [sprintPlanning, dailyScrum, sprintReview, sprintRetrospective];
+
 export default articleList;
 
 

@@ -1,10 +1,11 @@
 import styles from "./Scrum-Events.module.css";
 import Article from "../../component/Article/Article";
-import  articleList  from "../../data/articleData";
+import  articleList  from "../../data/articleData.js";
 import { useState } from "react";
 
 const ScrumEvents = () => {
   const [focusedArticle, setFocus] = useState(null)
+  console.log(articleList)
 
   return(
     <>
