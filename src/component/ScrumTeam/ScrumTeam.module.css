@@ -38,7 +38,7 @@
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 .ScrumRolesImage {
@@ -69,6 +69,7 @@
   position: relative;
   text-align: center;
   overflow: hidden;
+  min-height: fit-content;
   width: 90%;
 }
 .ScrumMemberText {
@@ -108,6 +109,21 @@
     flex-direction: column;
   }
   .ScrumTeamText {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
+}
+
+@media screen and (max-width: 400px) {
+    .dropdownHead {
+        height: 40px;
+      }
+      .ScrumRolesImage {
+        height: 150px;
+        width: 100%;
+      }
+      .ScrumMemberText :is(p) {
+        font-weight: 200;
+        letter-spacing: 1px;
+        font-size: 13px;
+      }
 }
