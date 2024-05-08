@@ -2,6 +2,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../../assets/hero_artifacts.jpg');
     background-size: cover;
     height: 90vh;
+    /* height: 10vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +38,98 @@
     left: -10px;
 }
 
+.artifactsInfoBG {
+    background-color: rgb(252, 243, 233);
+    display: flex;
+    justify-content: center;
+}
+
+.artifactsInfo {
+    display: flex;
+    padding: 15px;
+    max-width: 1200px;
+}
+
+.artifactsText {
+    text-align: center;
+}
+
+.artifactsText h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.artifactsText p {
+    text-align: start;
+    padding: 5px 15px;
+    margin: 40px 0;
+    border-top: 1px hsla(40.52980132, 91.51515152%, 67.64705882%, 1) solid;
+    border-bottom: 1px hsla(40.52980132, 91.51515152%, 67.64705882%, 1) solid;
+}
+
+.artifactsInfo ul {}
+
+.artifactsInfo li {
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    margin: 20px 0 10px 50px;
+    text-align: start;
+}
+
+.artifactsInfo li::before {
+    content: "\02609";
+    margin: 0 5px;
+    color: rgb(226, 166, 36);
+}
+
+.artifactsImg {
+    width: 40%;
+    object-fit: contain;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.artifactsBtn {
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    margin: 40px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    background-color: hsla(40.52980132, 91.51515152%, 67.64705882%, 1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px 10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.artifactsBtn:hover {
+    background-color: rgb(246, 216, 150);
+
+}
+
 @media only screen and (max-width: 768px) {
+
+    .artifactsInfo li {
+        margin: 10px 0 10px 15px;
+    }
+
+    .artifactsImg {
+        align-self: center;
+        width: 70%;
+    }
+
+    .artifactsInfo {
+        flex-direction: column-reverse;
+    }
 
     .headlineContainer {
         width: 90%;

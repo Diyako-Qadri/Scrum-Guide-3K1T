@@ -138,7 +138,7 @@ const Layout = () => {
                         </nav>
                     </aside>
                 </div>
-            </nav>
+            </.nav>
             <section className={styles.mainContent}>
                 <Outlet />
             </section>
