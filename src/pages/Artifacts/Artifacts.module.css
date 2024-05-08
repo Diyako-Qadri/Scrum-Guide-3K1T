@@ -52,6 +52,7 @@
 
 .artifactsText {
     text-align: center;
+    overflow-x: hidden;
 }
 
 .artifactsText h2 {
