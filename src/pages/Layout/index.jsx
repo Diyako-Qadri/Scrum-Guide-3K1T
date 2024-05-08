@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './Layout.module.css'
 import { NavLink, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion'
+import Footer from '../../component/Footer/Footer';
 
 const Layout = () => {
     const [openBurger, setOpenBurger] = useState(false);
@@ -29,6 +30,7 @@ const Layout = () => {
                         <NavLink className={`${styles.navItem} ${styles.about}`} to='/about'>About</NavLink>
                         <NavLink className={`${styles.navItem} ${styles.contact}`} to='/contact'>Contact</NavLink>
                     </div>
+                    
                     <div className={styles.hamburger}>
                         <label className={styles.hamburgerMenu}>
                             <input checked={openBurger} onClick={handeClick} type="checkbox" />
@@ -140,6 +142,7 @@ const Layout = () => {
             <section className={styles.mainContent}>
                 <Outlet />
             </section>
+            <Footer />
         </>
     )
 };
