@@ -15,15 +15,16 @@ const ScrumTeam = () => {
   return (
     <>
       <div className={styles.ScrumTeamIntro}>
-        <p className={styles.ScrumTeamText}>
+      
+      </div>
+
+      <div className={styles.TeamMemberContainer}>
+      <p className={styles.ScrumTeamText}>
           A Scrum team comprises roles like Scrum Master, Product Owner, and
           developers collaborating to deliver products using the Scrum
           methodology. They organize work into short iterations called sprints,
           aiming for continuous improvement and adaptation based on feedback.
         </p>
-      </div>
-
-      <div className={styles.TeamMemberContainer}>
         {ScrumRoles.map((item, i) => (
           <motion.div
             whileHover={{ scale: 1.02 }}

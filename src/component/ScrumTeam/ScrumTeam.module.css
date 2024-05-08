@@ -13,7 +13,7 @@
   
   .ScrumTeamText {
     align-self: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border-radius: 10px;
     border: 1px solid #fff;
     color: rgb(252, 252, 252);
@@ -24,7 +24,8 @@
     padding: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    width: 80%;
+    margin-bottom: 30px;
+    width: 90%;
   }
   
   .TeamMemberContainer {
@@ -105,10 +106,12 @@
   
   @media screen and (max-width: 429px) {
     .TeamMemberContainer {
-      height: 500px;
       flex-direction: column;
+
     }
     .ScrumTeamText {
+       
+        margin-top: 20px;
       font-size: 1rem;
     }
   }
