@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Scrum from './pages/Scrum-page'
 import About from './pages/About'
 import Artifacts from './pages/Artifacts'
+import TheScrumTeam from './pages/TheScrumTeam'
 function App() {
     return (
         <>
@@ -13,7 +14,7 @@ function App() {
                 <Route element={<Layout />}>
                     <Route path='/' element={<Home/>} />
                     <Route path='/scrum' element={<Scrum/>} />
-                    <Route path='/team' element='' />
+                    <Route path='/team' element={<TheScrumTeam/>} />
                     <Route path='/events' element='' />
                     <Route path='/artifacts' element={<Artifacts />} />
                     <Route path='/about' element={<About/>} />
