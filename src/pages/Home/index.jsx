@@ -1,11 +1,13 @@
 import styles from './Home.module.css'
 import Hero from '../../component/Hero';
+import WelcomeMsg from '../../component/WelcomeMsg';
 
 const Home = () => {
     return (
         <section className={styles.HomePage}>
             <div>
-                <Hero/>              
+                <Hero/>
+                <WelcomeMsg />              
             </div>
         </section>
     )
