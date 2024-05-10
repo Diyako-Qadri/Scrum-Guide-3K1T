@@ -1,0 +1,22 @@
+.scrum__events__structure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 70vh;
+  margin-top: 100px;
+  padding: 1rem;
+
+}
+
+.article__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 800px) { 
+  .article__wrapper {
+    padding: 3rem;
+    gap: 1rem;
+  }
+}

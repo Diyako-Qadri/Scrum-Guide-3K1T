@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <section className={styles.HomePage}>
             <div>
-                <Hero/>
+                <Hero/>              
             </div>
         </section>
     )
