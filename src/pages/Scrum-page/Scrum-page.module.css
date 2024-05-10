@@ -89,7 +89,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
     text-align: start;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     color: #f0f0f0;
@@ -121,8 +121,15 @@
   margin-bottom: 20px;
   color: #333;
 }
+@media only screen and (max-width: 998px) {
+    .welcomeMessageScrum{
+        font-size: 1.8rem;
+        width: 90%;
+    }
 
-@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 868px) {
     .underline,
     .headlineContainer h1{
         font-size: 4rem;
@@ -138,3 +145,13 @@
     }
 
 } 
+
+@media only screen and (max-width: 480px) {
+    .welcomeMessageScrum{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .definitionContent{
+        font-size: .8rem;
+    }
+}
