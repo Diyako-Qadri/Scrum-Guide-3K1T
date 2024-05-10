@@ -16,11 +16,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  text-align:start;
   justify-content: center;
-  height: 100vh;
-  flex-direction: column;
-  width: 100%;
+
 }
 
 .headlineContainer {
@@ -124,3 +121,20 @@
   margin-bottom: 20px;
   color: #333;
 }
+
+@media only screen and (max-width: 768px) {
+    .underline,
+    .headlineContainer h1{
+        font-size: 4rem;
+
+    }
+    .welcomeMessageScrum{
+        font-size: 1.3rem;
+        width: 90%;
+    }
+
+    .definitionContent{
+        font-size: 1.1rem;
+    }
+
+} 
