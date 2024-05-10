@@ -1,8 +1,7 @@
 .artifactsBg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../../assets/hero_artifacts.jpg');
     background-size: cover;
-    height: 90vh;
-    /* height: 10vh; */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
