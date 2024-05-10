@@ -52,6 +52,7 @@
 
 .artifactsText {
     text-align: center;
+    overflow-x: hidden;
 }
 
 .artifactsText h2 {
@@ -69,8 +70,6 @@
     border-top: 1px hsla(40.52980132, 91.51515152%, 67.64705882%, 1) solid;
     border-bottom: 1px hsla(40.52980132, 91.51515152%, 67.64705882%, 1) solid;
 }
-
-.artifactsInfo ul {}
 
 .artifactsInfo li {
     list-style: none;
