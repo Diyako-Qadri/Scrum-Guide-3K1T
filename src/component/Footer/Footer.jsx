@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
       <div className={styles.right__content}>
         <div className={styles.footer__links}>
-          <a href="">Articles</a>
+          <NavLink className={`${styles.navItem} ${styles.about}`} to='/'>Home</NavLink>
           <NavLink className={`${styles.navItem} ${styles.about}`} to='/about'>About</NavLink>
           <NavLink className={`${styles.navItem} ${styles.contact}`} to='/contact'>Contact</NavLink>
         </div>
