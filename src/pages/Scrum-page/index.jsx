@@ -4,6 +4,8 @@ import backgroundImage from '../../assets/scrumpageHeroImag.jpg';
 import IntroBackground from '../../assets/scrumIntroBackground.jpg';
 import definitionBackground from '../../assets/scrumDefinition.jpg';
 import scrumTheoryBG from '../../assets/scrumTheoryBG.jpg';
+import scrumValueBG from '../../assets/scrumValueBG.jpg';
+import { ScrumValues } from '../../data/data';
 
 const Scrum = () => {
   return (
@@ -106,12 +108,9 @@ const Scrum = () => {
               },
             }}
             viewport={{ once: true }}
+            className={styles.conetntTitle}
           >
-            <h4>Scrum Definition</h4>
-            <p>
-              Scrum is a flexible framework that helps people, teams and even
-              whole organizations deal with tricky problems smartly.
-            </p>
+            <h4>Here’s how it works: </h4>
           </motion.div>
           <motion.div
             initial={{
@@ -214,7 +213,25 @@ const Scrum = () => {
           <motion.div
             initial={{
               opacity: 0,
-              y: 50,
+              x: 150,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              x: 0,
+              transition: {
+                duration: 2,
+              },
+            }}
+            viewport={{ once: true }}
+            className={styles.conetntTitle}
+          >
+            <h4>Scrum Theory</h4>
+          </motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: -150,
             }}
             whileInView={{
               opacity: 1,
@@ -226,7 +243,7 @@ const Scrum = () => {
             }}
             viewport={{ once: true }}
           >
-            <h4>Scrum Theory</h4>
+            <h4>Empiricism</h4>
             <p>
               Scrum is like learning to ride a bike. You learn by doing, not
               just reading about it; this is empiricism. You figure things out
@@ -237,7 +254,7 @@ const Scrum = () => {
           <motion.div
             initial={{
               opacity: 0,
-              y: 70,
+              x: 150,
             }}
             whileInView={{
               opacity: 1,
@@ -258,7 +275,7 @@ const Scrum = () => {
           <motion.div
             initial={{
               opacity: 0,
-              y: 90,
+              x: -150,
             }}
             whileInView={{
               opacity: 1,
@@ -280,7 +297,7 @@ const Scrum = () => {
           <motion.div
             initial={{
               opacity: 0,
-              y: 80,
+              x: 150,
             }}
             whileInView={{
               opacity: 1,
@@ -303,7 +320,7 @@ const Scrum = () => {
           <motion.div
             initial={{
               opacity: 0,
-              y: 80,
+              x: -150,
             }}
             whileInView={{
               opacity: 1,
@@ -326,7 +343,7 @@ const Scrum = () => {
           <motion.div
             initial={{
               opacity: 0,
-              y: 80,
+              x: 150,
             }}
             whileInView={{
               opacity: 1,
@@ -346,6 +363,51 @@ const Scrum = () => {
             </p>
           </motion.div>
         </div>
+      </div>
+      <div
+        className={styles.ScrumValues}
+        style={{
+          backgroundImage: `linear-gradient(#00000075, #0000004d), url(${scrumValueBG})`,
+        }}
+      ><div className={styles.definitionContent} >
+        <motion.h4
+            initial={{
+                opacity: 0,
+                x: -150,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                x: 0,
+                transition: {
+                  duration: 2,
+                },
+              }}
+              viewport={{ once: true }} className={styles.conetntTitle}>Scrum Values</motion.h4>
+        {ScrumValues.map((item, i) => (
+          
+            <motion.div
+            initial={{
+                opacity: 0,
+                x: i % 2 === 0 ? -150 : 150, 
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                x: 0,
+                transition: {
+                  duration: 2,
+                },
+              }}
+              viewport={{ once: true }}
+              key={i}>
+              <motion.h4>{item.title}</motion.h4>
+              <motion.p>
+                {item.description}
+              </motion.p>
+            </motion.div>
+         
+        ))} </div>
       </div>
     </>
   );

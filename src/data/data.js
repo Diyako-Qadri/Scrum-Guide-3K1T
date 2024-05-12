@@ -22,3 +22,34 @@ function ScrumTeamMember(name, image, description) {
     )
 ];
   
+function ScrumValue(title, description){
+  this.title = title;
+  this.description = description;
+}
+
+export const ScrumValues = [
+  new ScrumValue (
+    "Commitment",
+    "Scrum teams must fully commit to their project, ensuring each member contributes effectively to the goals. Commitment is reinforced by Scrum masters through careful sprint planning and shielding the team from scope changes and undue pressure." 
+  ),
+  new ScrumValue (
+    "Focus",
+    "Focus is crucial in Scrum sprints, where team members concentrate on tasks that enhance the product's value, prioritize the most important activities, and strive to complete work within the sprint." 
+  ),
+  new ScrumValue (
+    "Respect",
+    "Respect is crucial within Scrum teams, where members view each other as skilled professionals. This involves appreciating each other's unique expertise and perspectives, enriching team dynamics and leading to more innovative solutions."
+  ),
+  new ScrumValue (
+    "Openness",
+    "Openness is crucial within Scrum teams, where both members and stakeholders commit to maintaining transparency about all aspects of the work and any challenges encountered. This includes openly sharing challenges to quickly address them together, encouraging constructive feedback for continuous improvement."
+  ),
+  new ScrumValue (
+    "Courage", 
+    "Courage means being willing to tackle challenges, even when they are tough, and daring to explore the unknown. It involves being open to change and willing to share information and engage in respectful discussions even when opinions differ."
+  )
+]
+
+
+
+
