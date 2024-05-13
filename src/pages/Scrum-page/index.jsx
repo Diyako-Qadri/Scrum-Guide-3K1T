@@ -31,7 +31,7 @@ const Scrum = () => {
             }}
             viewport={{ once: true }}
           >
-            The Scrum
+            The Scrum 
             <motion.span
               initial={{
                 opacity: 0,
@@ -48,7 +48,7 @@ const Scrum = () => {
               viewport={{ once: true }}
               className={styles.underline}
             >
-              Definition
+           {""} Definition
             </motion.span>{' '}
           </motion.h1>
         </div>
