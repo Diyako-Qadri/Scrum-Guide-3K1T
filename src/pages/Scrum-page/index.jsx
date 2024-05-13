@@ -31,7 +31,7 @@ const Scrum = () => {
             }}
             viewport={{ once: true }}
           >
-            The{' '}
+            The Scrum
             <motion.span
               initial={{
                 opacity: 0,
@@ -48,9 +48,8 @@ const Scrum = () => {
               viewport={{ once: true }}
               className={styles.underline}
             >
-              Scrum
+              Definition
             </motion.span>{' '}
-            Definition
           </motion.h1>
         </div>
       </div>
@@ -369,27 +368,31 @@ const Scrum = () => {
         style={{
           backgroundImage: `linear-gradient(#00000075, #0000004d), url(${scrumValueBG})`,
         }}
-      ><div className={styles.definitionContent} >
-        <motion.h4
+      >
+        <div className={styles.definitionContent}>
+          <motion.h4
             initial={{
-                opacity: 0,
-                x: -150,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                x: 0,
-                transition: {
-                  duration: 2,
-                },
-              }}
-              viewport={{ once: true }} className={styles.conetntTitle}>Scrum Values</motion.h4>
-        {ScrumValues.map((item, i) => (
-          
+              opacity: 0,
+              x: -150,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              x: 0,
+              transition: {
+                duration: 2,
+              },
+            }}
+            viewport={{ once: true }}
+            className={styles.conetntTitle}
+          >
+            Scrum Values
+          </motion.h4>
+          {ScrumValues.map((item, i) => (
             <motion.div
-            initial={{
+              initial={{
                 opacity: 0,
-                x: i % 2 === 0 ? -150 : 150, 
+                x: i % 2 === 0 ? -150 : 150,
               }}
               whileInView={{
                 opacity: 1,
@@ -400,14 +403,13 @@ const Scrum = () => {
                 },
               }}
               viewport={{ once: true }}
-              key={i}>
+              key={i}
+            >
               <motion.h4>{item.title}</motion.h4>
-              <motion.p>
-                {item.description}
-              </motion.p>
+              <motion.p>{item.description}</motion.p>
             </motion.div>
-         
-        ))} </div>
+          ))}{' '}
+        </div>
       </div>
     </>
   );
