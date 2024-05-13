@@ -54,14 +54,41 @@ const ScrumTeam = () => {
       </div>
 
       <div className={styles.TeamMemberContainer}>
-        <p className={styles.ScrumTeamText}>
+        <motion.p 
+          initial={{
+            opacity: 0,
+            x: -150,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            x: 0,
+            transition: {
+              duration: 2,
+            },
+          }}
+          viewport={{ once: true }}
+        className={styles.ScrumTeamText}>
           A Scrum team comprises roles like Scrum Master, Product Owner, and
           developers collaborating to deliver products using the Scrum
           methodology. They organize work into short iterations called sprints,
           aiming for continuous improvement and adaptation based on feedback.
-        </p>
+        </motion.p>
         {ScrumRoles.map((item, i) => (
           <motion.div
+          initial={{
+            opacity: 0,
+            x: 150,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            x: 0,
+            transition: {
+              duration: 2,
+            },
+          }}
+          viewport={{ once: true }}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.95, rotate: '1.05deg' }}
             key={i}
