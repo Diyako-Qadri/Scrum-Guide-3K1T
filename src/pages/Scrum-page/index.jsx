@@ -335,7 +335,7 @@ const Scrum = () => {
             <p>
               Scrum brings people with different skills and knowledge needed to
               tackle the job. They also share their experiences with others in
-              their group, that way everyone learns from each other.
+              their group, that way everyone learns from each other. 
             </p>
           </motion.div>
         </div>
