@@ -331,29 +331,6 @@ const Scrum = () => {
             }}
             viewport={{ once: true }}
           >
-            <h4>Teamwork and Adaptation</h4>
-            <p>
-              In Scrum, you’ve got these special events called Sprints. Within
-              each Sprint, the team checks in, sees how things are going, and
-              makes any necessary changes. It’s all about working together,
-              being open about progress, and making adjustments as needed.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: 150,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              x: 0,
-              transition: {
-                duration: 2,
-              },
-            }}
-            viewport={{ once: true }}
-          >
             <h4>Working Together</h4>
             <p>
               Scrum brings people with different skills and knowledge needed to
