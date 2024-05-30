@@ -198,7 +198,7 @@
 }
 
 .navItems a::after {
-  background-color: #fffefe;
+  background-color: hsla(40.52980132, 91.51515152%, 67.64705882%, 1);
 }
 
 .navLogo {
