@@ -80,7 +80,7 @@
   .ScrumRolesImage {
     background-color: rgba(255, 255, 255, 0.771);
     border-radius: 0 0 0 10px;
-    height: 300px;
+    height: auto;
     max-width: 400px;
   }
   .dropdownHead {
@@ -172,7 +172,6 @@
           height: 40px;
         }
         .ScrumRolesImage {
-          height: 150px;
           width: 100%;
         }
         .ScrumMemberText :is(p) {
